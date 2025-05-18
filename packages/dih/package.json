@@ -1,0 +1,29 @@
+{
+  "name": "dih",
+  "version": "0.1.0",
+  "description": "DIH Framework for AI Applications",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "dev": "tsup src/index.ts --format esm --watch",
+    "lint": "eslint .",
+    "clean": "rm -rf dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "dih",
+    "ai",
+    "framework"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+} 

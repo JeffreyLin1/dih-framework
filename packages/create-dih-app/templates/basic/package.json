@@ -1,0 +1,12 @@
+{
+  "name": "dih-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "dih": "^0.1.0"
+  }
+} 
