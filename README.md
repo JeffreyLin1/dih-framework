@@ -1,6 +1,6 @@
 # DIH Framework
 
-DIH Framework is a toolkit for building AI-powered applications with ease.
+DIH Framework is a toolkit for building AI-powered applications.
 
 ## Packages
 
