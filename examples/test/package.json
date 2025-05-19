@@ -1,7 +1,7 @@
 {
-  "name": "dih-app-nextjs",
+  "name": "test",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -21,4 +21,4 @@
     "eslint-config-next": "^13.4.19",
     "typescript": "^5.3.3"
   }
-} 
+}

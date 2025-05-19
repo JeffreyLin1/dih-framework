@@ -7,6 +7,7 @@ import fs from 'fs-extra';
 import path from 'path';
 import ora from 'ora';
 import { fileURLToPath } from 'url';
+import { execSync } from 'child_process';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -69,17 +70,16 @@ program
     const answers = await inquirer.prompt([
       {
         type: 'list',
-        name: 'template',
-        message: 'Select a template:',
-        choices: ['basic', 'with-typescript', 'with-nextjs'],
-        default: 'basic'
-      },
-      {
-        type: 'list',
         name: 'packageManager',
         message: 'Select a package manager:',
         choices: ['npm', 'yarn', 'pnpm'],
         default: 'npm'
+      },
+      {
+        type: 'confirm',
+        name: 'installDeps',
+        message: 'Do you want to install dependencies now?',
+        default: true
       }
     ]);
     
@@ -87,21 +87,49 @@ program
     
     try {
       // Create project structure based on template
-      await createProjectStructure(projectPath, answers.template);
+      await createProjectStructure(projectPath, 'with-nextjs');
       
       spinner.succeed(chalk.green('Project created successfully!'));
+      
+      // Install dependencies if requested
+      if (answers.installDeps) {
+        spinner.start('Installing dependencies...');
+        try {
+          const installCommand = getInstallCommand(answers.packageManager);
+          execSync(installCommand, { cwd: projectPath, stdio: 'ignore' });
+          spinner.succeed(chalk.green('Dependencies installed successfully!'));
+        } catch (error) {
+          spinner.fail(chalk.red('Failed to install dependencies'));
+          console.error('You can install them manually by running:');
+          console.log(`  cd ${chalk.cyan(projectDirectory)}`);
+          if (answers.packageManager === 'npm') {
+            console.log(`  ${chalk.cyan('npm install')}`);
+          } else if (answers.packageManager === 'yarn') {
+            console.log(`  ${chalk.cyan('yarn')}`);
+          } else if (answers.packageManager === 'pnpm') {
+            console.log(`  ${chalk.cyan('pnpm install')}`);
+          }
+        }
+      }
       
       console.log('\nNext steps:');
       console.log(`  cd ${chalk.cyan(projectDirectory)}`);
       
+      if (!answers.installDeps) {
+        if (answers.packageManager === 'npm') {
+          console.log(`  ${chalk.cyan('npm install')}`);
+        } else if (answers.packageManager === 'yarn') {
+          console.log(`  ${chalk.cyan('yarn')}`);
+        } else if (answers.packageManager === 'pnpm') {
+          console.log(`  ${chalk.cyan('pnpm install')}`);
+        }
+      }
+      
       if (answers.packageManager === 'npm') {
-        console.log(`  ${chalk.cyan('npm install')}`);
         console.log(`  ${chalk.cyan('npm run dev')}`);
       } else if (answers.packageManager === 'yarn') {
-        console.log(`  ${chalk.cyan('yarn')}`);
         console.log(`  ${chalk.cyan('yarn dev')}`);
       } else if (answers.packageManager === 'pnpm') {
-        console.log(`  ${chalk.cyan('pnpm install')}`);
         console.log(`  ${chalk.cyan('pnpm dev')}`);
       }
       
@@ -114,6 +142,19 @@ program
       process.exit(1);
     }
   });
+
+function getInstallCommand(packageManager: string): string {
+  switch (packageManager) {
+    case 'npm':
+      return 'npm install';
+    case 'yarn':
+      return 'yarn';
+    case 'pnpm':
+      return 'pnpm install';
+    default:
+      return 'npm install';
+  }
+}
 
 async function createProjectStructure(projectPath: string, template: string): Promise<void> {
   // Try to find templates in different locations
@@ -134,7 +175,7 @@ async function createProjectStructure(projectPath: string, template: string): Pr
   
   // Check if template exists
   if (!fs.existsSync(templatePath)) {
-    throw new Error(`Template "${template}" not found at ${templatePath}`);
+    throw new Error(`Next.js template not found at ${templatePath}`);
   }
   
   // Copy template files to project directory

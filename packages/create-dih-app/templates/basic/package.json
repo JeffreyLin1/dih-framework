@@ -7,6 +7,5 @@
     "start": "node src/index.js"
   },
   "dependencies": {
-    "dih": "^0.1.0"
   }
 } 
