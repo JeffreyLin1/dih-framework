@@ -1,6 +1,6 @@
 # Create DIH App
 
-Create DIH Framework applications with one command.
+Create DIH Framework applications with one command. This CLI tool creates Next.js applications with DIH Framework integration.
 
 ## Usage
 
@@ -18,11 +18,11 @@ yarn create dih-app my-app
 pnpm create dih-app my-app
 ```
 
-The CLI will guide you through the setup process, allowing you to choose from different templates:
-
-- `basic`: A simple JavaScript project
-- `with-typescript`: A TypeScript project
-- `with-nextjs`: A Next.js project with TypeScript
+The CLI will guide you through the setup process, creating a Next.js application with:
+- TypeScript support
+- ESLint configuration
+- DIH Framework integration
+- Basic project structure
 
 ## Development
 
@@ -34,13 +34,15 @@ To develop the CLI locally:
 4. Link the package: `npm link`
 5. Run the CLI: `create-dih-app my-test-app`
 
-## Templates
+## Template
 
-The CLI includes several templates:
-
-- `basic`: A minimal JavaScript setup
-- `with-typescript`: A TypeScript configuration with type checking
-- `with-nextjs`: A Next.js application with TypeScript support
+The CLI creates a Next.js application with the following features:
+- Next.js 13.4.19
+- React 18.2.0
+- TypeScript support
+- ESLint configuration
+- Basic project structure with pages and styles
+- DIH Framework integration
 
 ## License
 

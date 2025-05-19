@@ -1,10 +1,15 @@
 # DIH Framework
 
-DIH Framework is a toolkit for building AI-powered applications with ease.
+DIH Framework is a Next.js-based toolkit for building AI-powered applications with ease.
+🚧 This package is still under construction. Not production-ready!
+
+## Overview
+
+DIH Framework is built on top of Next.js, providing a robust foundation for creating AI-powered web applications. It combines the power of Next.js with AI capabilities to help you build sophisticated applications quickly.
 
 ## Packages
 
-- `create-dih-app`: CLI tool to create new DIH applications
+- `create-dih-app`: CLI tool to create new DIH applications (Next.js-based)
 - `dih`: Core framework package (coming soon)
 
 ## Getting Started
@@ -24,6 +29,8 @@ yarn create dih-app my-app
 # Using pnpm
 pnpm create dih-app my-app
 ```
+
+This will create a new Next.js application with DIH Framework integration.
 
 ## Development
 
