@@ -5,7 +5,7 @@ DIH Framework is a toolkit for building AI-powered applications.
 ## Packages
 
 - `create-dih-app`: CLI tool to create new DIH applications (Next.js-based)
-- `dih`: Core framework package (coming soon)
+- `@tr1jeffrey/dih`: Core framework package
 
 ## Getting Started
 

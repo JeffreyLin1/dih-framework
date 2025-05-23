@@ -3,30 +3,36 @@
  * A framework for building AI-powered applications
  */
 
+// Configuration types
 export interface DIHConfig {
   apiKey?: string;
   modelName?: string;
   maxTokens?: number;
+  temperature?: number;
+  basePath?: string;
+  debug?: boolean;
 }
 
-export class DIH {
-  private config: DIHConfig;
+// Core components
+export { DIH } from './core/dih.js';
 
-  constructor(config: DIHConfig = {}) {
-    this.config = {
-      modelName: 'gpt-4',
-      maxTokens: 1000,
-      ...config
-    };
-  }
+// Model interfaces
+export { ModelInterface } from './models/interface.js';
+export { OpenAIModel } from './models/openai.js';
+export { AnthropicModel } from './models/anthropic.js';
 
-  /**
-   * Initialize the DIH framework
-   */
-  async init(): Promise<void> {
-    console.log('DIH Framework initialized with config:', this.config);
-  }
-}
+// Chat completion
+export { ChatMessage, ChatCompletionOptions, ChatCompletion } from './chat/completion.js';
 
-// Default export
-export default DIH; 
+// Prompt templates
+export { PromptTemplate, TemplateVariable } from './prompt/template.js';
+
+// Streaming
+export { StreamingHandler, StreamingResponse } from './streaming/handler.js';
+
+// Utilities
+export { Logger } from './utils/logger.js';
+export * from './utils/tokenCounter.js';
+
+// Types
+export * from './types/index.js'; 

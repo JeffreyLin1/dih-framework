@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>DIH Framework App</title>
-        <meta name="description" content="Created with DIH Framework" />
+        <title>DIH App</title>
+        <meta name="description" content="Created with DIH" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

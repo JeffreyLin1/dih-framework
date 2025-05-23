@@ -2,6 +2,7 @@
   "name": "dih-app-nextjs",
   "version": "0.1.0",
   "private": false,
+  "description": "Next.js application with DIH Framework for AI-powered features",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tr1jeffrey/dih": "^0.1.0",
     "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

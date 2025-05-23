@@ -1,6 +1,6 @@
 {
   "name": "create-dih-app",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Create DIH applications with one command",
   "main": "dist/index.js",
   "bin": {
@@ -12,7 +12,8 @@
     "postbuild": "cp -r templates dist/",
     "dev": "tsup index.ts --format esm --watch",
     "lint": "eslint .",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
   },
   "files": [
     "dist",

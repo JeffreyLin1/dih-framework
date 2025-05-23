@@ -1,5 +1,5 @@
 {
-  "name": "dih",
+  "name": "@tr1jeffrey/dih",
   "version": "0.1.0",
   "description": "DIH Framework for AI Applications",
   "main": "dist/index.js",
@@ -9,7 +9,8 @@
     "build": "tsup src/index.ts --format esm --dts",
     "dev": "tsup src/index.ts --format esm --watch",
     "lint": "eslint .",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
   },
   "files": [
     "dist"
@@ -17,13 +18,41 @@
   "keywords": [
     "dih",
     "ai",
-    "framework"
+    "framework",
+    "llm",
+    "openai",
+    "anthropic",
+    "chat",
+    "completion"
   ],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeffreylin1/dih-framework"
+  },
+  "homepage": "https://github.com/jeffreylin1/dih-framework",
+  "bugs": {
+    "url": "https://github.com/jeffreylin1/dih-framework/issues"
+  },
+  "author": "Jeffrey Lin",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.10.4",
     "tsup": "^8.0.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "eslint": "^8.56.0"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "peerDependencies": {
+    "openai": "^4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "openai": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
-} 
+}
