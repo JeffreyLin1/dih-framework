@@ -20,7 +20,7 @@ program
   .version('0.1.0')
   .argument('[project-directory]', 'Directory to create the project in')
   .action(async (projectDirectory: string | undefined) => {
-    console.log(chalk.bold('\n🚀 Welcome to DIH Framework - AI Application Builder\n'));
+    console.log(chalk.bold('\n🚀 Welcome to DIH 🥀 - AI Application Builder\n'));
     
     // If no project directory was provided, ask for it
     if (!projectDirectory) {
@@ -133,7 +133,7 @@ program
         console.log(`  ${chalk.cyan('pnpm dev')}`);
       }
       
-      console.log('\nTo learn more about DIH Framework, check out the documentation:');
+      console.log('\nTo learn more about DIH 🥀, check out the documentation:');
       console.log(chalk.cyan('https://github.com/jeffreylin1/dih-framework'));
       
     } catch (error) {
@@ -189,17 +189,17 @@ async function createProjectStructure(projectPath: string, template: string): Pr
     await fs.writeJson(packageJsonPath, packageJson, { spaces: 2 });
   }
   
-  // Create a .env file with placeholder for API key if it doesn't exist
-  const envPath = path.join(projectPath, '.env');
+  // Create a .env.local file with placeholder for API key if it doesn't exist
+  const envPath = path.join(projectPath, '.env.local');
   if (!fs.existsSync(envPath)) {
-    await fs.writeFile(envPath, 'DIH_API_KEY=your_api_key_here\n');
+    await fs.writeFile(envPath, 'OPENAI_API_KEY=your_api_key_here\n');
   }
   
   // Create a .gitignore file if it doesn't exist
   const gitignorePath = path.join(projectPath, '.gitignore');
   if (!fs.existsSync(gitignorePath)) {
     await fs.writeFile(gitignorePath, 
-      'node_modules\n.env\n.DS_Store\ndist\n.next\n.vercel\n');
+      'node_modules\n.env\n.env.local\n.DS_Store\ndist\n.next\n.vercel\n');
   }
 }
 

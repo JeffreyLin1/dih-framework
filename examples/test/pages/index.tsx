@@ -31,25 +31,15 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <a 
-            href="https://github.com/JeffreyLin1/dih-framework"
-            target="_blank"
-            rel="noopener noreferrer" 
-            className={styles.card}
-          >
+          <div className={styles.card}>
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about DIH Framework features and API.</p>
-          </a>
+          </div>
 
-          <a 
-            href="https://github.com/JeffreyLin1/dih-framework/tree/main/examples"
-            target="_blank"
-            rel="noopener noreferrer" 
-            className={styles.card}
-          >
+          <div className={styles.card}>
             <h2>Examples &rarr;</h2>
             <p>Discover and deploy example DIH Framework projects.</p>
-          </a>
+          </div>
         </div>
       </main>
 
@@ -59,7 +49,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by DIH 🥀
+          Powered by DIH Framework
         </a>
       </footer>
     </div>
