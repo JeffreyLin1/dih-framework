@@ -5,8 +5,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #1a1212;
-  color: #e6d6d6;
+  background-color: #f8f5f5;
+  color: #4a2c2c;
 }
 
 .main {
@@ -35,7 +35,7 @@
   border-radius: 0.5rem;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.1s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(139, 38, 38, 0.2);
 }
 
 .button:hover {
@@ -51,7 +51,7 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #3a2828;
+  border-top: 1px solid #e6d6d6;
   justify-content: center;
   align-items: center;
 }
@@ -61,11 +61,11 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  color: #bd8c8c;
+  color: #8b2626;
 }
 
 .title a {
-  color: #bd8c8c;
+  color: #8b2626;
   text-decoration: none;
 }
 
@@ -73,7 +73,7 @@
 .title a:focus,
 .title a:active {
   text-decoration: underline;
-  color: #d9aeae;
+  color: #631919;
 }
 
 .title {
@@ -81,7 +81,7 @@
   line-height: 1.15;
   font-size: 4rem;
   text-align: center;
-  color: #d9aeae;
+  color: #4a2c2c;
 }
 
 .description {
@@ -89,17 +89,17 @@
   line-height: 1.5;
   font-size: 1.5rem;
   text-align: center;
-  color: #c7b6b6;
+  color: #6c4b4b;
 }
 
 .code {
-  background: #2a1c1c;
+  background: #f0e8e8;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
-  color: #d9aeae;
+  color: #8b2626;
 }
 
 .grid {
@@ -114,28 +114,28 @@
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
-  color: #c7b6b6;
+  color: #4a2c2c;
   text-decoration: none;
-  border: 1px solid #3a2828;
-  background-color: #251a1a;
+  border: 1px solid #e6d6d6;
+  background-color: #fff;
   border-radius: 10px;
   transition: all 0.15s ease;
   max-width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #d9aeae;
+  color: #631919;
   border-color: #8b2626;
-  background-color: #2a1c1c;
+  background-color: #faf6f6;
 }
 
 .card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
-  color: #d9aeae;
+  color: #8b2626;
 }
 
 .card p {

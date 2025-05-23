@@ -1,6 +1,6 @@
 # DIH Framework with Next.js
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [DIH Framework](https://github.com/jeffreylin1/dih-framework), providing you with AI-powered capabilities out of the box.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [DIH 🥀](https://github.com/jeffreylin1/dih-framework), providing you with AI-powered capabilities out of the box.
 
 ## 🚀 Getting Started
 

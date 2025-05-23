@@ -45,17 +45,17 @@ export default function ChatPage() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Chat with DIH Framework</title>
-        <meta name="description" content="Chat example with DIH Framework" />
+        <title>Chat with DIH 🥀</title>
+        <meta name="description" content="Chat example with DIH 🥀" />
       </Head>
       
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Chat with DIH Framework
+          Chat with DIH 🥀
         </h1>
         
         <p className={styles.description}>
-          This example demonstrates a chat interface using DIH Framework
+          This example demonstrates a chat interface using DIH 🥀
         </p>
         
         <div className={styles.chatWrapper}>
@@ -73,7 +73,7 @@ export default function ChatPage() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by DIH Framework
+          Powered by DIH 🥀
         </a>
       </footer>
     </div>

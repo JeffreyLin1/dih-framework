@@ -1,6 +1,6 @@
 # Create DIH App
 
-Create DIH Framework applications with one command. This CLI tool creates Next.js applications with DIH Framework integration.
+Create DIH 🥀 applications with one command. This CLI tool creates Next.js applications with DIH 🥀 integration.
 
 ## Usage
 
@@ -42,7 +42,7 @@ The CLI creates a Next.js application with the following features:
 - TypeScript support
 - ESLint configuration
 - Basic project structure with pages and styles
-- DIH Framework integration
+- DIH 🥀 integration
 
 ## License
 

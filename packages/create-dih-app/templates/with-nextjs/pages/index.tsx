@@ -14,11 +14,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://github.com/jeffreylin1/dih-framework">DIH Framework!</a>
+          Welcome to <a href="https://github.com/jeffreylin1/dih-framework">DIH 🥀</a>
         </h1>
 
         <p className={styles.description}>
-          Get started by exploring these examples
+          Get started by exploring these examples 💔💔💔
         </p>
 
         <div className={styles.buttonContainer}>

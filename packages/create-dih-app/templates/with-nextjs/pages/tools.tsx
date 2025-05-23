@@ -105,17 +105,17 @@ export default function ToolsPage() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>AI Tools with DIH Framework</title>
-        <meta name="description" content="Tools example with DIH Framework" />
+        <title>AI Tools with DIH 🥀</title>
+        <meta name="description" content="Tools example with DIH 🥀" />
       </Head>
       
       <main className={styles.main}>
         <h1 className={styles.title}>
-          AI Tools with DIH Framework
+          AI Tools with DIH 🥀
         </h1>
         
         <p className={styles.description}>
-          This example demonstrates using DIH Framework with tools. Try asking about the weather or searching for products.
+          This example demonstrates using DIH 🥀 with tools. Try asking about the weather or searching for products.
         </p>
         
         <div className={styles.toolWrapper}>
@@ -142,7 +142,7 @@ export default function ToolsPage() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by DIH Framework
+          Powered by DIH 🥀
         </a>
       </footer>
     </div>

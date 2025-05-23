@@ -1,6 +1,6 @@
-# DIH Framework
+# DIH 🥀
 
-DIH Framework is a toolkit for building AI-powered applications.
+DIH is a framework for building AI-powered applications.
 
 ## Packages
 
@@ -25,7 +25,7 @@ yarn create dih-app my-app
 pnpm create dih-app my-app
 ```
 
-This will create a new Next.js application with DIH Framework integration.
+This will create a new Next.js application with DIH 🥀 integration.
 
 ## Development
 

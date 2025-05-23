@@ -1,4 +1,4 @@
-# DIH Framework
+# DIH 🥀
 
 A lightweight, flexible framework for building AI-powered applications with support for OpenAI and Anthropic models.
 

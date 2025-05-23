@@ -1,6 +1,6 @@
 {
   "name": "create-dih-app",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Create DIH applications with one command",
   "main": "dist/index.js",
   "bin": {
