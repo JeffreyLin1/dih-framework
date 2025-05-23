@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -17,9 +18,17 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
+          Get started by exploring these examples
         </p>
+
+        <div className={styles.buttonContainer}>
+          <Link href="/chat" className={styles.button}>
+            Chat Example
+          </Link>
+          <Link href="/tools" className={styles.button}>
+            Tools Example
+          </Link>
+        </div>
 
         <div className={styles.grid}>
           <div className={styles.card}>
