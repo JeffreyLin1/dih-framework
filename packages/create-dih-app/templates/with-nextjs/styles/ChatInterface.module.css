@@ -4,10 +4,11 @@
   height: 100%;
   max-width: 800px;
   margin: 0 auto;
-  background-color: #f9f9f9;
+  background-color: #251a1a;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   overflow: hidden;
+  border: 1px solid #3a2828;
 }
 
 .messageContainer {
@@ -17,6 +18,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  background-color: #1e1515;
 }
 
 .message {
@@ -49,42 +51,46 @@
 }
 
 .userMessage .messageContent {
-  background-color: #0070f3;
-  color: white;
+  background-color: #8b2626;
+  color: #e6d6d6;
   border-top-right-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .assistantMessage .messageContent {
-  background-color: #e5e5ea;
-  color: black;
+  background-color: #3a2828;
+  color: #c7b6b6;
   border-top-left-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .inputContainer {
   display: flex;
   padding: 16px;
-  border-top: 1px solid #e5e5e5;
-  background-color: white;
+  border-top: 1px solid #3a2828;
+  background-color: #251a1a;
 }
 
 .input {
   flex: 1;
   padding: 12px 16px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #3a2828;
   border-radius: 20px;
   font-size: 16px;
   resize: none;
   outline: none;
   transition: border-color 0.3s;
+  background-color: #2a1c1c;
+  color: #e6d6d6;
 }
 
 .input:focus {
-  border-color: #0070f3;
+  border-color: #8b2626;
 }
 
 .sendButton {
   margin-left: 10px;
-  background-color: #0070f3;
+  background-color: #8b2626;
   color: white;
   border: none;
   border-radius: 20px;
@@ -95,11 +101,11 @@
 }
 
 .sendButton:hover {
-  background-color: #0060d3;
+  background-color: #631919;
 }
 
 .sendButton:disabled {
-  background-color: #a3a3a3;
+  background-color: #4a3333;
   cursor: not-allowed;
 }
 
@@ -107,7 +113,7 @@
   display: flex;
   justify-content: center;
   padding: 12px 16px;
-  background-color: #e5e5ea;
+  background-color: #3a2828;
   border-radius: 18px;
   border-top-left-radius: 4px;
 }
@@ -116,7 +122,7 @@
   width: 8px;
   height: 8px;
   margin: 0 3px;
-  background-color: #888;
+  background-color: #bd8c8c;
   border-radius: 50%;
   animation: bounce 1.4s infinite ease-in-out both;
 }

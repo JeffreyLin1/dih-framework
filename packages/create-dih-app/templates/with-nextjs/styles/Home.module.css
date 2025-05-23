@@ -5,6 +5,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #1a1212;
+  color: #e6d6d6;
 }
 
 .main {
@@ -28,15 +30,16 @@
   font-size: 1.1rem;
   font-weight: 600;
   color: #fff;
-  background-color: #0070f3;
+  background-color: #8b2626;
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .button:hover {
-  background-color: #0060d0;
+  background-color: #631919;
   transform: translateY(-2px);
 }
 
@@ -48,7 +51,7 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #3a2828;
   justify-content: center;
   align-items: center;
 }
@@ -58,10 +61,11 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  color: #bd8c8c;
 }
 
 .title a {
-  color: #0070f3;
+  color: #bd8c8c;
   text-decoration: none;
 }
 
@@ -69,6 +73,7 @@
 .title a:focus,
 .title a:active {
   text-decoration: underline;
+  color: #d9aeae;
 }
 
 .title {
@@ -76,6 +81,7 @@
   line-height: 1.15;
   font-size: 4rem;
   text-align: center;
+  color: #d9aeae;
 }
 
 .description {
@@ -83,15 +89,17 @@
   line-height: 1.5;
   font-size: 1.5rem;
   text-align: center;
+  color: #c7b6b6;
 }
 
 .code {
-  background: #fafafa;
+  background: #2a1c1c;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
+  color: #d9aeae;
 }
 
 .grid {
@@ -106,24 +114,28 @@
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
-  color: inherit;
+  color: #c7b6b6;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  border: 1px solid #3a2828;
+  background-color: #251a1a;
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  transition: all 0.15s ease;
   max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #d9aeae;
+  border-color: #8b2626;
+  background-color: #2a1c1c;
 }
 
 .card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
+  color: #d9aeae;
 }
 
 .card p {
